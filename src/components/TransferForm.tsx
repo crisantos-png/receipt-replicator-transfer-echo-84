@@ -10,7 +10,7 @@ import accessBankLogo from "@/assets/access-bank-logo.png";
 import zenithBankLogo from "@/assets/zenith-bank-logo.png";
 import firstBankLogo from "@/assets/first-bank-logo.png";
 import ubaLogo from "@/assets/uba-logo.png";
-import palmpayLogo from "@/assets/palmpay-logo.png";
+
 
 interface Bank {
   id: string;
@@ -37,7 +37,6 @@ const banks: Bank[] = [
   { id: "zenith", name: "Zenith Bank", logo: zenithBankLogo },
   { id: "firstbank", name: "First Bank", logo: firstBankLogo },
   { id: "uba", name: "UBA", logo: ubaLogo },
-  { id: "palmpay", name: "PalmPay", logo: palmpayLogo },
 ];
 
 export function TransferForm({ onTransfer, onBack }: TransferFormProps) {

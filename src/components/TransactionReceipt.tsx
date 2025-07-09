@@ -59,10 +59,12 @@ export function TransactionReceipt({ transferData, onBack, onNewTransfer }: Tran
         <Card className="bg-card/90 border-border/30 shadow-lg mb-6 animate-scale-in backdrop-blur-sm">
           <CardContent className="p-6 text-center">
             {/* Logo/Icon */}
-            <div className="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-success/30">
-              <div className="w-8 h-8 bg-success rounded-full flex items-center justify-center">
-                <Check className="w-4 h-4 text-white" />
-              </div>
+            <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 overflow-hidden">
+              <img 
+                src="/lovable-uploads/4c35dfe3-c48d-41cd-ae62-05920fb47e8d.png" 
+                alt="App Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
 
             {/* Transfer Details */}

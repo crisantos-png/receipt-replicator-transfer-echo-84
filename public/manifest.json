@@ -1,0 +1,24 @@
+{
+  "name": "Receipt Replicator",
+  "short_name": "Receipt App",
+  "description": "Transfer receipt generator app",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/lovable-uploads/4c35dfe3-c48d-41cd-ae62-05920fb47e8d.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lovable-uploads/4c35dfe3-c48d-41cd-ae62-05920fb47e8d.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
