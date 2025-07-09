@@ -158,13 +158,10 @@ export function TransactionReceipt({ transferData, onBack, onNewTransfer }: Tran
                 <span className="text-muted-foreground">Recipient Details</span>
                 <div className="text-right">
                   <div className="flex items-center gap-2 justify-end mb-1">
-                    {transferData.bank && (
-                      <img src={transferData.bank.logo} alt={transferData.bank.name} className="w-5 h-5 object-contain" />
-                    )}
                     <span className="text-foreground font-medium">{transferData.recipientName.toUpperCase()}</span>
                   </div>
                   <div className="text-sm text-muted-foreground">
-                    {transferData.recipientAccount}
+                    {transferData.bank?.name || "Bank"} | {transferData.recipientAccount}
                   </div>
                 </div>
               </div>
