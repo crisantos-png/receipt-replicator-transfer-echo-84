@@ -1,7 +1,7 @@
 {
-  "name": "Receipt Replicator",
-  "short_name": "Receipt App",
-  "description": "Transfer receipt generator app",
+  "name": "SecureTransfer",
+  "short_name": "SecureTransfer",
+  "description": "Generate secure transfer receipts instantly",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
