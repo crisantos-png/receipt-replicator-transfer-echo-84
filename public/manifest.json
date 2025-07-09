@@ -1,6 +1,6 @@
 {
-  "name": "SecureTransfer",
-  "short_name": "SecureTransfer",
+  "name": "OPay",
+  "short_name": "OPay",
   "description": "Generate secure transfer receipts instantly",
   "start_url": "/",
   "display": "standalone",

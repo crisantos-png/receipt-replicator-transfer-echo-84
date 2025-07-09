@@ -54,7 +54,7 @@ export function TransactionReceipt({ transferData, onBack, onNewTransfer }: Tran
         </Button>
       </div>
 
-      <div className="p-4 max-w-md mx-auto">
+      <div className="p-4 max-w-full sm:max-w-lg mx-auto w-full">
         {/* Main Transaction Card */}
         <Card className="bg-card/90 border-border/30 shadow-lg mb-6 animate-scale-in backdrop-blur-sm">
           <CardContent className="p-6 text-center">
