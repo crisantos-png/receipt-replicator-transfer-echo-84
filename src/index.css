@@ -18,9 +18,9 @@
     --popover-foreground: 210 40% 98%;
 
     /* Brand Colors - OPay Style */
-    --primary: 158 64% 52%;
-    --primary-foreground: 210 40% 98%;
-    --primary-glow: 158 64% 62%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 0 0% 15%;
 
     --secondary: 220 13% 15%;
     --secondary-foreground: 210 40% 85%;
@@ -32,8 +32,8 @@
     --accent-foreground: 210 40% 98%;
 
     /* Status Colors */
-    --success: 158 64% 52%;
-    --success-foreground: 210 40% 98%;
+    --success: 0 0% 0%;
+    --success-foreground: 0 0% 100%;
     
     --warning: 38 92% 50%;
     --warning-foreground: 220 13% 9%;
@@ -44,7 +44,7 @@
     /* UI Elements */
     --border: 220 13% 20%;
     --input: 220 13% 15%;
-    --ring: 158 64% 52%;
+    --ring: 0 0% 0%;
 
     --radius: 0.75rem;
 
