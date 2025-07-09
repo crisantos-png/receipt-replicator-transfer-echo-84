@@ -37,31 +37,31 @@ export function TransactionReceipt({ transferData, onBack, onNewTransfer }: Tran
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <div className="flex items-center justify-between p-4 border-b border-border">
+      <div className="flex items-center justify-between p-4 border-b border-border/30">
         <div className="flex items-center">
           <Button 
             variant="ghost" 
             size="icon" 
             onClick={onBack}
-            className="mr-3 hover:bg-muted"
+            className="mr-3 hover:bg-muted/50 text-muted-foreground hover:text-foreground"
           >
             <ArrowLeft className="h-5 w-5" />
           </Button>
           <h1 className="text-lg font-medium text-foreground">Transaction Details</h1>
         </div>
-        <Button variant="ghost" size="icon" className="hover:bg-muted">
-          <User className="h-5 w-5 text-primary" />
+        <Button variant="ghost" size="icon" className="hover:bg-muted/50">
+          <User className="h-5 w-5 text-success" />
         </Button>
       </div>
 
       <div className="p-4 max-w-md mx-auto">
         {/* Main Transaction Card */}
-        <Card className="bg-gradient-card border-border shadow-card mb-6 animate-scale-in">
+        <Card className="bg-card/90 border-border/30 shadow-lg mb-6 animate-scale-in backdrop-blur-sm">
           <CardContent className="p-6 text-center">
             {/* Logo/Icon */}
-            <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-glow">
-              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                <div className="w-4 h-4 bg-primary rounded-sm transform rotate-45"></div>
+            <div className="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4 border border-success/30">
+              <div className="w-8 h-8 bg-success rounded-full flex items-center justify-center">
+                <Check className="w-4 h-4 text-white" />
               </div>
             </div>
 
@@ -115,16 +115,16 @@ export function TransactionReceipt({ transferData, onBack, onNewTransfer }: Tran
             </div>
 
             {/* Notice */}
-            <div className="text-xs text-muted-foreground text-left bg-muted/20 p-3 rounded-lg">
+            <div className="text-xs text-muted-foreground text-left bg-muted/10 p-3 rounded-lg border border-border/30">
               The recipient account is expected to be credited within 5 minutes, subject to 
               notification by the bank. If you have any questions, you can also{" "}
-              <span className="text-primary cursor-pointer">contact the recipient bank &gt;&gt;</span>
+              <span className="text-success cursor-pointer hover:text-success/80">contact the recipient bank &gt;&gt;</span>
             </div>
           </CardContent>
         </Card>
 
         {/* Amount Breakdown */}
-        <Card className="bg-gradient-card border-border shadow-card mb-6">
+        <Card className="bg-card/90 border-border/30 shadow-lg mb-6 backdrop-blur-sm">
           <CardContent className="p-4">
             <div className="space-y-3">
               <div className="flex justify-between items-center">
@@ -147,7 +147,7 @@ export function TransactionReceipt({ transferData, onBack, onNewTransfer }: Tran
         </Card>
 
         {/* Transaction Details */}
-        <Card className="bg-gradient-card border-border shadow-card mb-6">
+        <Card className="bg-card/90 border-border/30 shadow-lg mb-6 backdrop-blur-sm">
           <CardContent className="p-4">
             <h3 className="text-lg font-medium text-foreground mb-4">Transaction Details</h3>
             
@@ -214,7 +214,7 @@ export function TransactionReceipt({ transferData, onBack, onNewTransfer }: Tran
         </Card>
 
         {/* More Actions */}
-        <Card className="bg-gradient-card border-border shadow-card mb-6">
+        <Card className="bg-card/90 border-border/30 shadow-lg mb-6 backdrop-blur-sm">
           <CardContent className="p-4">
             <h3 className="text-lg font-medium text-foreground mb-4">More Actions</h3>
             
@@ -232,12 +232,12 @@ export function TransactionReceipt({ transferData, onBack, onNewTransfer }: Tran
         <div className="grid grid-cols-2 gap-4">
           <Button 
             variant="outline" 
-            className="bg-transparent border-border text-foreground hover:bg-muted"
+            className="bg-transparent border-border/50 text-muted-foreground hover:bg-muted/30 hover:text-foreground hover:border-border"
           >
             Report Issue
           </Button>
           <Button 
-            className="bg-gradient-primary hover:shadow-glow transition-all duration-300 text-white"
+            className="bg-success hover:bg-success/90 hover:shadow-lg transition-all duration-300 text-white font-medium"
             onClick={onNewTransfer}
           >
             Share Receipt
