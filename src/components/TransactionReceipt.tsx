@@ -164,7 +164,7 @@ export function TransactionReceipt({ transferData, onBack, onNewTransfer }: Tran
                     <span className="text-foreground font-medium">{transferData.recipientName.toUpperCase()}</span>
                   </div>
                   <div className="text-sm text-muted-foreground">
-                    {transferData.bank?.name || "Bank"} | {transferData.recipientAccount}
+                    {transferData.recipientAccount}
                   </div>
                 </div>
               </div>
